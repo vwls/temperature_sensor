@@ -39,7 +39,7 @@ for device in lst:
   with open(temp_log, 'a') as f:
     s = device_name + ','
     s += date_log + ','
-    s += str(get_temp(device)) + '/r/n'
+    s += str(get_temp(device)) + '\r\n'
     print(s)
     f.write(s)
   #when there are multiple devices, a short pause
